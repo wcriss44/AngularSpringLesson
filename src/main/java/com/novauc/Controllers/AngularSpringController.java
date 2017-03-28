@@ -22,7 +22,7 @@ public class AngularSpringController {
     }
     @RequestMapping(path = "/user", method = RequestMethod.PUT)
     public void updateUser(@RequestBody User user) {
-        users.save(user);
+            users.save(user);
     }
     @RequestMapping(path = "/user/{id}", method = RequestMethod.DELETE)
     public void deleteUser(@PathVariable("id") int id) {
